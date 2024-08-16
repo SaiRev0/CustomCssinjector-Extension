@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .rule {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .urlPatternInput,
+        .cssInput {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .deleteButton {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .deleteButton:hover {
+            background-color: #c0392b;
+        }
+
+        #saveButton {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #saveButton:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Add Custom CSS</h2>
+    <input id="urlPattern" type="text" placeholder="URL Pattern (RegExp)">
+    <textarea id="customCSS" placeholder="Enter your CSS here"></textarea>
+    <button id="saveButton">Save</button>
+
+    <h2>Saved Rules</h2>
+    <div id="rulesContainer"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
